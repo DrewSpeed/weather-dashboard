@@ -11,19 +11,21 @@
 </head>
 <body>
     <container class="container-fluid">
-        <h1>Weather Dashboard</h1>
+        <h1 class="banneer-2">Weather Dashboard</h1>
         <div class="row mx-auto">
             <div class="col-10 col-md-3">
 
-                    <form action="submit" class="border-bottom border-primary">
+                    <form id="search-form" class="border-bottom border-primary">
                      <div class="input-group mx-auto mb-3 px-2">
-                        <input type="text" class="form-control" placeholder="Search for a city..." aria-label="City Search" aria-describedby="button-addon2">
+                        <input type="text" class="form-control" placeholder="Search for a city..." aria-label="City Search" id="city-search" aria-describedby="button-addon2">
                         <button class="btn btn-outline-primary" type="button" id="button-addon2">
                             <i class="bi bi-search"></i>
                         </button>
                     </div>
-                    <div class="stored-cities">
+                    <div>
+                        <ul id="stored-cities">
 
+                        </ul>
                     </div>
                     </form>
             </div>
@@ -35,7 +37,7 @@
             </div>
         </div>
     </container>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./assets/script.js"></script>
 </body>
 </html>

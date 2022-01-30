@@ -1,0 +1,19 @@
+.btn-secondary {
+    width:100%;
+}
+.banner-2 {
+    text-align: center;
+    width: 100%;
+}
+
+.badge-secondary {
+    background-color: #FFA500;
+}
+
+.badge-primary {
+    background-color: #A020F0;
+}
+
+.badge-success {
+    background-color: green;
+}

@@ -11,7 +11,7 @@
 </head>
 <body>
     <container class="container-fluid">
-        <h1 class="banneer-2">Weather Dashboard</h1>
+        <h1 class="banner-2">Weather Dashboard</h1>
         <div class="row mx-auto">
             <div class="col-10 col-md-3">
 
@@ -22,21 +22,21 @@
                             <i class="bi bi-search"></i>
                         </button>
                     </div>
-                    <div>
-                        <ul id="stored-cities">
 
-                        </ul>
-                    </div>
                     </form>
+                    <div id="stored-cities">
+
+                    </div>
             </div>
             <div class="col-10 col-md-7" id="city-info">
-                <div class="row border" id="city-info">
+                <div class="row" id="city-info">
                </div>
-                <div class="row bg-secondary" id="forecast-info">
+                <div class="row" id="forecast-info">
                 </div>
             </div>
         </div>
     </container>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./assets/script.js"></script>
 </body>

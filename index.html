@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
+    <h1 class="banner-2 py-2">Weather Dashboard</h1>
     <container class="container-fluid">
-        <h1 class="banner-2">Weather Dashboard</h1>
-        <div class="row mx-auto">
-            <div class="col-10 col-md-3">
+      
+        <div class="row mx-auto content justify-content-around">
+            <div class="col-12 col-md-3">
 
                     <form id="search-form" class="border-bottom border-primary">
                      <div class="input-group mx-auto mb-3 px-2">
@@ -28,15 +29,14 @@
 
                     </div>
             </div>
-            <div class="col-10 col-md-7" id="city-info">
+            <div class="col-12 col-md-8">
                 <div class="row" id="city-info">
                </div>
-                <div class="row" id="forecast-info">
+                <div class="d-flex flex-wrap justify-content-around mt-3" id="forecast-info">
                 </div>
             </div>
         </div>
     </container>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./assets/script.js"></script>
 </body>

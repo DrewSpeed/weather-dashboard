@@ -4,8 +4,19 @@
 .banner-2 {
     text-align: center;
     width: 100%;
+    background: linear-gradient(90deg, rgba(41,43,44,1) 0%, rgba(91,192,222,1) 35%, rgba(2,117,216,1) 100%);
+    top: 0;
+    position: absolute;
+
 }
 
+.content {
+    padding-top: 50px;
+}
+
+.container-fluid {
+    padding-top: 50px;
+}
 .badge-secondary {
     background-color: #FFA500;
 }
@@ -16,4 +27,9 @@
 
 .badge-success {
     background-color: green;
+}
+
+.card {
+    background-color: #5bc0de;
+    text-align: center;
 }

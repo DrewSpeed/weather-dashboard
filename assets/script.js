@@ -20,7 +20,7 @@ getCoord = function(term) {
     forecastEl.children().remove();
 
 
-    var cityApi = "http://api.openweathermap.org/geo/1.0/direct?q=" + term + "&limit=7&appid=d59512c6dea391d77551756401616069";
+    var cityApi = "https://api.openweathermap.org/geo/1.0/direct?q=" + term + "&limit=7&appid=d59512c6dea391d77551756401616069";
     console.log(cityApi);
    fetch(cityApi).then(function(response) {
        
@@ -53,7 +53,7 @@ getWeather = function(data) {
     // get data for city-info header and append
     // storeKey(city);
  appendWeather = function(city) {
-    cityName = "http://api.openweathermap.org/geo/1.0/reverse?lat=" + city.lat +"&lon=" + city.lon + "&limit=1&appid=d59512c6dea391d77551756401616069";
+    cityName = "https://api.openweathermap.org/geo/1.0/reverse?lat=" + city.lat +"&lon=" + city.lon + "&limit=1&appid=d59512c6dea391d77551756401616069";
     nameInfo = fetch(cityName).then(function(response) {
         return response.json();
     }).then (function(data) {
@@ -69,7 +69,7 @@ getWeather = function(data) {
         unixToday = (data.current.dt)*1000;
         nameInfo = await nameInfo;
             dateToday = new Date(unixToday).toLocaleDateString("en-US");
-        var iconToday = '<img src="http://openweathermap.org/img/wn/' + data.current.weather[0].icon + '@2x.png" />';
+        var iconToday = '<img src="https://openweathermap.org/img/wn/' + data.current.weather[0].icon + '@2x.png" />';
         var cityDisplay = $('<h3>' + nameInfo.name + ' - ' + dateToday + ' ' + iconToday + '</h3>');
         cityInfoEl.append(cityDisplay);
         //append temperature, wind, humitidy, uvi
@@ -101,7 +101,7 @@ getWeather = function(data) {
             day = data.daily[i];
             unixDay = (day.dt)*1000;
             dayDate = new Date(unixDay).toLocaleDateString("en-US");
-            dayIcon = '<h3><img src="http://openweathermap.org/img/wn/' + day.weather[0].icon + '@2x.png" /></h3>';
+            dayIcon = '<h3><img src="https://openweathermap.org/img/wn/' + day.weather[0].icon + '@2x.png" /></h3>';
             dayTemp = Math.floor(day.temp.day) + "&deg F";
             dayWind = day.wind_speed + " MPH";
             dayHumid = day.humidity + "%"
